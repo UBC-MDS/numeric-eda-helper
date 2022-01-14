@@ -1,7 +1,14 @@
-# Contributing
+# Contributing to numeric-eda-helper package
 
-Contributions are welcome, and they are greatly appreciated! Every little bit
-helps, and credit will always be given.
+This outlines how to propose a change to the numeric-eda-helper package.
+
+## General contribution guidelines
+
+We welcome all contributions to this project! If you notice a bug, or have a feature request, please open up an issue here. If you’d like to contribute a feature or bug fix, you can fork our repo and submit a pull request. We will review pull requests within 7 days. All contributors must abide by our code of conduct (see below). All contributions are greatly appreciated!
+
+## Prerequisites
+
+Before you make a substantial pull request, you should file an issue and make sure someone from the team agrees that it's a problem. If you've found a bug, create an associated issue and illustrate the bug with a minimal reprex.
 
 ## Types of Contributions
 
@@ -28,6 +35,10 @@ and "help wanted" is open to whoever wants to implement it.
 You can never have enough documentation! Please feel free to contribute to any
 part of the documentation, such as the official docs, docstrings, or even 
 on the web in blog posts, articles, and such.
+
+### Fixing typos
+
+Small typos or grammatical errors in documentation may be edited directly using the GitHub web interface.
 
 ### Submit Feedback
 
@@ -61,13 +72,18 @@ Ready to contribute? Here's how to set up `numeric-eda-helper` for local develop
 
 ## Pull Request Guidelines
 
-Before you submit a pull request, check that it meets these guidelines:
+We recommend that you create a Git branch for each pull request (PR). Before you submit a pull request, check that it meets these guidelines:
 
-1. The pull request should include additional tests if appropriate.
-2. If the pull request adds functionality, the docs should be updated.
-3. The pull request should work for all currently supported operating systems and versions of Python.
+1. New code should follow the tidyverse style guide or PEP8 style guide.
+2. The pull request should include additional tests if appropriate.
+3. If the pull request adds functionality, the docs should be updated.
+4. The pull request should work for all currently supported operating systems and versions of Python.
 
 ## Code of Conduct
 
 Please note that the `numeric-eda-helper` project is released with a 
 Code of Conduct. By contributing to this project you agree to abide by its terms.
+
+### Attribution
+
+These contributing guidelines were adapted from the python cookiecutter package contributing guidelines.
