@@ -2,6 +2,13 @@
 
 Exploratory data analysis package for data that is numeric in nature.
 
+### CONTRIBUTORS
+
+-   Anupriya Srivastava 
+-   Jiwei Hu 
+-   Michelle Wang 
+-   Samuel Quist
+
 ## Installation
 
 ```bash
