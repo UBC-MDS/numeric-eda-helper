@@ -1,32 +1,28 @@
 # numeric-eda-helper
 
-Exploratory data analysis package for data that is numeric in nature. The goal is to simply some common tasks during EDA and data preprocessing for data analysists. The package includes functions which can complete the following tasks:
+Data scientists often spend alot of time preprocessing data to extract useful parts for their analysis. The numeric-eda-helper package is a package that aims to streamline Exploratory Data Analysis, specifically for numeric data in datasets. The goal is to simplify some common and repetitive tasks during EDA and data preprocessing for data analysts, as well as add value to their workflow by presenting some useful insights in a quick manner (just calling our functions), such as displaying highly-correlated variables and outliers. 
 
-- showing some useful statistics
-- detecting outliers
-- dealing with missing values
-- checking for correlation between features  
+The package includes functions which can complete the following tasks:
 
-## Installation
+- Display some useful statistics
+- Detect outliers
+- Deal with missing values
+- Check for correlation between features  
 
-```bash
-$ pip install numeric-eda-helper
-```
+## Function descriptions
 
-## Usage
-
-- TODO
+- `flag_outliers`: This function helps to display numeric variables which contain outliers that exceed a certain user-specified threshold percentage, using the interquartile range method. Users can then take note of these variables with high percentage of outliers and decide what to do with the variable(s). 
 
 ## Similar Work
 
-In the Python open source ecosystem, there already has some useful packages that can tackle EDA and preprocessing well, but our goal is to make it more light-weighted and fast. One popular and useful package that can generate a large EDA report is: 
+In the Python open-source ecosystem, there exists some useful packages that already  tackle EDA and preprocessing, but our goal is to make it even more light-weighted, fast and specifically tailored to present numeric EDA insights. One popular and useful package that can generate EDA reports is: 
 
 - [`pandasprofiling`](https://github.com/pandas-profiling/pandas-profiling)
 
 
 ## Contributors
 
-We welcome all contributions and the current contributors are:
+We welcome all contributions and the current main contributors are:
 
 -   Anupriya Srivastava 
 -   Jiwei Hu 
@@ -36,7 +32,7 @@ We welcome all contributions and the current contributors are:
 
 ## License
 
-`numeric-eda-helper` was created by Sam Quist. It is licensed under the terms of the MIT license.
+Licensed under the terms of the MIT license.
 
 ## Credits
 
