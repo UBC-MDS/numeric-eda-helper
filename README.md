@@ -11,7 +11,8 @@ The package includes functions which can complete the following tasks:
 
 ## Function descriptions
 
-- `flag_outliers`: This function helps to display numeric variables which contain outliers that exceed a certain user-specified threshold percentage, using the interquartile range method. Users can then take note of these variables with high percentage of outliers and decide what to do with the variable(s). 
+- `flag_outliers`: This function helps to display numeric variables which contain outliers that exceed a certain user-specified threshold percentage, using the interquartile range method. Users can then take note of these variables with high percentage of outliers and decide what to do with the variable(s).
+- `missing_imputer`:This function aims to detect missing values in the numeric data frame and using strategies including drop, mean or median to drop missing values or to replace them with the mean or median of other values in the same column.
 
 ## Similar Work
 
