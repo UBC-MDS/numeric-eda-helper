@@ -11,8 +11,10 @@ The package includes functions which can complete the following tasks:
 
 ## Function descriptions
 
+- `overview`: This function calculates common descriptive statistical values of in the input data. Users can choose the extent of information that is returned and have the option to use the function as a means to create statistical variables to be used elsewhere in the environment.
 - `flag_outliers`: This function helps to display numeric variables which contain outliers that exceed a certain user-specified threshold percentage, using the interquartile range method. Users can then take note of these variables with high percentage of outliers and decide what to do with the variable(s).
 - `missing_imputer`:This function aims to detect missing values in the numeric data frame and using strategies including drop, mean or median to drop missing values or to replace them with the mean or median of other values in the same column.
+- `get_correlated_features`:This function will get pairs of features which have correlation above a threshold value. We can specify if we want to check only the magniture of correlation value or we also want to consider sign (positive/ negative).
 
 ## Similar Work
 
