@@ -6,10 +6,10 @@ def overview(input, verbose=False, quiet=False):
     ----------
     input : `pandas.DataFrame` or `np.array`
         Input data to be summarized.
-    verbose : `bool`
+    verbose : `bool`, default 'False`
         Boolean value corresponding to showing additional
         information (histogram, estimated distribution).
-    quiet : `bool`
+    quiet : `bool`, default 'False'
         Boolean value corresponding to showing output of 
         the function. Used for acquiring variables.
         
