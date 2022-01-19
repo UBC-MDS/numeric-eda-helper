@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "numeric-eda-helper"
+name = "numeric_edahelper"
 version = "0.1.0"
 description = "Exploratory data analysis package for data that is numeric in nature."
 authors = ["Sam Quist"]
@@ -8,8 +8,11 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+pandas = "^1.3.5"
+numpy = "^1.22.1"
 
 [tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
