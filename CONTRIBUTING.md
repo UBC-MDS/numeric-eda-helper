@@ -1,6 +1,4 @@
-# Contributing to numeric-edahelper package
-
-This outlines how to propose a change to the numeric-edahelper package.
+# Contributing to numeric_edahelper package
 
 ## General contribution guidelines
 
@@ -51,10 +49,10 @@ If you are proposing a feature:
 
 ## Get Started!
 
-Ready to contribute? Here's how to set up `numeric-edahelper` for local development.
+Ready to contribute? Here's how to set up `numeric_edahelper` for local development.
 
-1. Download a copy of `numeric-edahelper` locally.
-2. Install `numeric-edahelper` using `poetry`:
+1. Download a copy of `numeric_edahelper` locally.
+2. Install `numeric_edahelper` using `poetry`:
 
     ```console
     $ poetry install
@@ -81,8 +79,7 @@ We recommend that you create a Git branch for each pull request (PR). Before you
 
 ## Code of Conduct
 
-Please note that the `numeric-edahelper` project is released with a 
-Code of Conduct. By contributing to this project you agree to abide by its terms.
+Please note that the `numeric_edahelper` project is released with a Code of Conduct. By contributing to this project you agree to abide by its terms.
 
 ### Attribution
 
