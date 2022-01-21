@@ -1,6 +1,6 @@
-# numeric-eda-helper
+# numeric-edahelper
 
-Data scientists often spend alot of time preprocessing data to extract useful parts for their analysis. The numeric-eda-helper package is a package that aims to streamline Exploratory Data Analysis, specifically for numeric data in datasets. The goal is to simplify some common and repetitive tasks during EDA and data preprocessing for data analysts, as well as add value to their workflow by presenting some useful insights in a quick manner (just calling our functions), such as displaying highly-correlated variables and outliers. 
+Data scientists often spend alot of time preprocessing data to extract useful parts for their analysis. The numeric-edahelper package is a package that aims to streamline Exploratory Data Analysis, specifically for numeric data in datasets. The goal is to simplify some common and repetitive tasks during EDA and data preprocessing for data analysts, as well as add value to their workflow by presenting some useful insights in a quick manner (just calling our functions), such as displaying highly-correlated variables and outliers. 
 
 The package includes functions which can complete the following tasks:
 
@@ -39,4 +39,4 @@ Licensed under the terms of the MIT license.
 
 ## Credits
 
-`numeric-eda-helper` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+`numeric-edahelper` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
