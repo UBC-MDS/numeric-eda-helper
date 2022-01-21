@@ -29,6 +29,7 @@ def overview(data, quiet=False):
 
     if not isinstance(quiet, bool):
         raise TypeError('Parameter "quiet" must be of `boolean` type.')
+
     means = []
     stds = []
     variances = []
@@ -37,6 +38,7 @@ def overview(data, quiet=False):
     stat_names = ['mean_', 'std_', 'var_', 
                  'median_']
     for col in range(len(data.columns)):
+        pd.to_numeric(data[data.columns[col]], errors='raise')
         means.append(np.mean(data[data.columns[col]]))
         medians.append(np.median(data[data.columns[col]]))
         stds.append(np.std(data[data.columns[col]]))
