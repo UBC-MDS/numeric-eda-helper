@@ -1,7 +1,5 @@
 # Contributing to numeric_edahelper package
 
-This outlines how to propose a change to the numeric_edahelper package.
-
 ## General contribution guidelines
 
 We welcome all contributions to this project! If you notice a bug, or have a feature request, please open up an issue here. If you’d like to contribute a feature or bug fix, you can fork our repo and submit a pull request. We will review pull requests within 7 days. All contributors must abide by our code of conduct (see below). All contributions are greatly appreciated!
@@ -81,8 +79,7 @@ We recommend that you create a Git branch for each pull request (PR). Before you
 
 ## Code of Conduct
 
-Please note that the `numeric_edahelper` project is released with a 
-Code of Conduct. By contributing to this project you agree to abide by its terms.
+Please note that the `numeric_edahelper` project is released with a Code of Conduct. By contributing to this project you agree to abide by its terms.
 
 ### Attribution
 
