@@ -1,13 +1,13 @@
 import numpy as np
 import pandas as pd
 
-def get_correlated_features(input_features, threshold, consider_sign=False):
+def get_correlated_features(X, threshold, consider_sign=False):
     """Calculates correlation between all feature pairs in the input data.
     Returns feature pairs having correlation higher than the threshold value.
 
     Parameters
     ----------
-    input_features : pandas.DataFrame
+    X : pandas.DataFrame
         numeric feature set used for EDA analysis
     threshold : float
         threshold for correlation above which feature pairs will be returned
@@ -27,6 +27,11 @@ def get_correlated_features(input_features, threshold, consider_sign=False):
                           "income": [20, 120, 120, 25]})
     >>> get_correlated_features(X, threshold=0.7)
     """
+    if not isinstance(X, pd.DataFrame):
+        raise TypeError("Feature set (X) should be of pandas dataframe type!")
+
+    if not isinstance(threshold, float): 
+        raise TypeError("Threshold value should be a floating point number!")
 
     features = list(X.columns)
     correlated_feat = pd.DataFrame(columns=["feature-1", "feature-2", "correlation"])
