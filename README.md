@@ -8,7 +8,27 @@ The package includes functions which can complete the following tasks:
 - Display some useful statistics
 - Detect outliers
 - Deal with missing values
-- Check for correlation between features  
+- Check for correlation between features
+
+## Usage
+
+In your Python interpreter, follow the example below:
+```
+import pandas as pd
+import numpy as np
+from numeric_edahelper.overview import overview
+from numeric_edahelper.flag_outliers import flag_outliers
+from numeric_edahelper.missing_imputer import missing_imputer
+from numeric_edahelper.get_correlated_features import get_correlated_features
+df = pd.DataFrame({"age": [23, 13, np.nan, 45],
+                  "height": [1.65, 1.23, 0.96, 1.55],
+                  "income": [20, 120, 120, 25]})
+missing_imputer(df, method="median")
+flag_outliers(df, threshold=0.2)
+overview(df, quiet=False)
+get_correlated_features(df, threshold=0.7)
+
+```
 
 ## Function descriptions
 

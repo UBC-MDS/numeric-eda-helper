@@ -20,7 +20,15 @@ def missing_imputer(data, method="mean"):
         An imputed dataframe
     Examples
     --------
+    >>> import pandas as pd
+    >>> import numpy as np
+    >>> from numeric_edahelper.missing_imputer import missing_imputer
+    >>> df = pd.DataFrame({'a':[1,2,np.nan],'b':[np.nan,1,0]})
     >>> missing_imputer(df, method="median")
+         a	    b
+    0	1.0	   0.5
+    1	2.0    1.0
+    2   1.5    0.0
     """
     # check if data type is pd.DataFrame
     if not isinstance(data, pd.DataFrame):
