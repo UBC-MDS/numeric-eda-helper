@@ -20,14 +20,13 @@ from numeric_edahelper.overview import overview
 from numeric_edahelper.flag_outliers import flag_outliers
 from numeric_edahelper.missing_imputer import missing_imputer
 from numeric_edahelper.get_correlated_features import get_correlated_features
-df = pd.DataFrame({"age": [23, 13, np.nan, 45],
-                  "height": [1.65, 1.23, 0.96, 1.55],
-                  "income": [20, 120, 120, 25]})
+df = pd.DataFrame({'col1': [-100,-200, 1,2,3,4,5,6,7,8,9,np.nan, 1000], 
+                   'col2': [1,2,3,4,5,6,7,8,9,10,11,12,13],
+                   'col3': [-50, 1,2,3,4,5,6,7,8,9,10,11,50000]})
+overview(df, quiet=False)
 missing_imputer(df, method="median")
 flag_outliers(df, threshold=0.2)
-overview(df, quiet=False)
 get_correlated_features(df, threshold=0.7)
-
 ```
 
 ## Function descriptions
