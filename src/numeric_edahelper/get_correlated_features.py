@@ -1,5 +1,5 @@
-import numpy as np
 import pandas as pd
+
 
 def get_correlated_features(X, threshold, consider_sign=False):
     """Calculates correlation between all feature pairs in the input data.
@@ -22,6 +22,7 @@ def get_correlated_features(X, threshold, consider_sign=False):
 
     Examples
     -------
+    >>> import pandas as pd
     >>> X = pd.DataFrame({"age": [23, 13, 7, 45],
                           "height": [1.65, 1.23, 0.96, 1.55],
                           "income": [20, 120, 120, 25]})
@@ -30,7 +31,7 @@ def get_correlated_features(X, threshold, consider_sign=False):
     if not isinstance(X, pd.DataFrame):
         raise TypeError("Feature set (X) should be of pandas dataframe type!")
 
-    if not isinstance(threshold, float): 
+    if not isinstance(threshold, float):
         raise TypeError("Threshold value should be a floating point number!")
 
     features = list(X.columns)
@@ -39,13 +40,13 @@ def get_correlated_features(X, threshold, consider_sign=False):
     for feat_1 in features:
         for feat_2 in features:
             corr_val = round(X[feat_1].corr(X[feat_2]), 2)
-            if consider_sign == False:
+            if consider_sign is False:
                 corr_val_abs = abs(corr_val)
             else:
                 corr_val_abs = corr_val
             if feat_1 != feat_2 and corr_val_abs >= 0:
                 corr_element = pd.DataFrame(data=[[feat_1, feat_2, corr_val]],
-                                           columns=["feature-1", "feature-2", "correlation"])
+                                            columns=["feature-1", "feature-2", "correlation"])
                 correlated_feat = correlated_feat.append(corr_element)
 
     return correlated_feat
