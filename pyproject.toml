@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "numeric_edahelper"
-version = "0.1.0"
+version = "1.0.0"
 description = "Exploratory data analysis package for data that is numeric in nature."
-authors = ["Sam Quist"]
+authors = ["Sam Quist", "Michelle Wang", "Anupriya Srivastava", "Jiwei Hu"]
 license = "MIT"
 readme = "README.md"
 
