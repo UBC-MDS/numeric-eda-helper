@@ -6,6 +6,7 @@ def missing_imputer(data, method="mean"):
 
     """
     Impute the missing values using the method selected
+    
     Parameters
     ----------
     data : pandas.DataFrame
