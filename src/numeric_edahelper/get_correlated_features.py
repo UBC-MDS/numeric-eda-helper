@@ -47,6 +47,6 @@ def get_correlated_features(X, threshold, consider_sign=False):
             if feat_1 != feat_2 and corr_val_abs >= threshold:
                 corr_element = pd.DataFrame(data=[[feat_1, feat_2, corr_val]],
                                             columns=["feature-1", "feature-2", "correlation"])
-                correlated_feat = correlated_feat.append(corr_element)
+                correlated_feat = pd.concat([correlated_feat, corr_element])
 
     return correlated_feat
