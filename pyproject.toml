@@ -2,11 +2,13 @@
 name = "numeric_edahelper"
 version = "1.0.1"
 description = "Exploratory data analysis package for data that is numeric in nature."
-
 authors = ["Samuel Quist", "Jiwei Hu", "Anupriya Srivastava", "Michelle Wang"]
-
 license = "MIT"
 readme = "README.md"
+homepage = "https://github.com/UBC-MDS/numeric_edahelper"
+repository = "https://github.com/UBC-MDS/numeric_edahelper"
+documentation = 'https://numeric-edahelper.readthedocs.io'
+
 
 [tool.poetry.dependencies]
 python = "^3.9"
