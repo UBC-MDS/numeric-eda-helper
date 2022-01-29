@@ -13,14 +13,17 @@ The package includes functions which can complete the following tasks:
 
 ## Installation
 
-```bash
-$ pip install numeric_edahelper
+```
+pip install numeric_edahelper
 ```
 
 ## Usage
 
 An example of how to use `numeric_edahelper` in Python:
 ```
+import pandas as pd
+import numpy as np
+
 from numeric_edahelper.overview import overview
 from numeric_edahelper.missing_imputer import missing_imputer
 from numeric_edahelper.flag_outliers import flag_outliers
