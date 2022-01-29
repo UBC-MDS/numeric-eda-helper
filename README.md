@@ -10,16 +10,17 @@ The package includes functions which can complete the following tasks:
 - Deal with missing values
 - Check for correlation between features
 
+## Installation
+
+```bash
+$ pip install -i https://test.pypi.org/simple/ numeric_edahelper
+```
+
 ## Usage
 
-In your Python interpreter, follow the example below:
+An example of how to use `numeric_edahelper` in Python:
 ```
-import pandas as pd
-import numpy as np
-from numeric_edahelper.overview import overview
-from numeric_edahelper.flag_outliers import flag_outliers
-from numeric_edahelper.missing_imputer import missing_imputer
-from numeric_edahelper.get_correlated_features import get_correlated_features
+from numeric_edahelper import numeric_edahelper
 df = pd.DataFrame({'col1': [-100,-200, 1,2,3,4,5,6,7,8,9,np.nan, 1000], 
                    'col2': [1,2,3,4,5,6,7,8,9,10,11,12,13],
                    'col3': [-50, 1,2,3,4,5,6,7,8,9,10,11,50000]})
@@ -35,6 +36,10 @@ get_correlated_features(df, threshold=0.7)
 - `flag_outliers`: This function helps to display numeric variables which contain outliers that exceed a certain user-specified threshold percentage, using the interquartile range method. Users can then take note of these variables with high percentage of outliers and decide what to do with the variable(s).
 - `missing_imputer`:This function aims to detect missing values in the numeric data frame and using strategies including drop, mean or median to drop missing values or to replace them with the mean or median of other values in the same column.
 - `get_correlated_features`:This function will get pairs of features which have correlation above a threshold value. We can specify if we want to check only the magniture of correlation value or we also want to consider sign (positive/ negative).
+
+## Documentation
+
+The official documentation is hosted on [`Read the Docs`](https://numeric-edahelper.readthedocs.io)
 
 ## Similar Work
 
