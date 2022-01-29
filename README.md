@@ -1,3 +1,4 @@
+[![ci-cd](https://github.com/UBC-MDS/numeric_edahelper/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/numeric_edahelper/actions/workflows/ci-cd.yml)
 
 # numeric_edahelper
 
