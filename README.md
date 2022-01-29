@@ -14,14 +14,18 @@ The package includes functions which can complete the following tasks:
 ## Installation
 
 ```bash
-$ pip install -i https://test.pypi.org/simple/ numeric_edahelper
+$ pip install numeric_edahelper
 ```
 
 ## Usage
 
 An example of how to use `numeric_edahelper` in Python:
 ```
-from numeric_edahelper import numeric_edahelper
+from numeric_edahelper.overview import overview
+from numeric_edahelper.missing_imputer import missing_imputer
+from numeric_edahelper.flag_outliers import flag_outliers
+from numeric_edahelper.get_correlated_features import get_correlated_features
+
 df = pd.DataFrame({'col1': [-100,-200, 1,2,3,4,5,6,7,8,9,np.nan, 1000], 
                    'col2': [1,2,3,4,5,6,7,8,9,10,11,12,13],
                    'col3': [-50, 1,2,3,4,5,6,7,8,9,10,11,50000]})
